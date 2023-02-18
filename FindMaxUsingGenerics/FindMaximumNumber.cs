@@ -40,5 +40,21 @@ namespace FindMaxUsingGenerics
             else
                 Console.WriteLine("The {0} is greatest of all number", thirdNumber);
         }
+        public static void FindMaxString()
+        {
+            Console.WriteLine("Enter first string");
+            string firstString = Console.ReadLine();
+            Console.WriteLine("Enter second string");
+            string secondString = Console.ReadLine();
+            Console.WriteLine("Enter third string");
+            string thirdString = Console.ReadLine();
+
+            if (firstString.CompareTo(secondString) > 0 && firstString.CompareTo(thirdString) > 0)
+                Console.WriteLine("The {0} is greatest of all number", firstString);
+            else if (secondString.CompareTo(thirdString) > 0)
+                Console.WriteLine("The {0} is greatest of all number", secondString);
+            else
+                Console.WriteLine("The {0} is greatest of all number", thirdString);
+        }
     }
 }
